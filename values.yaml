@@ -1,0 +1,8 @@
+prometheus:
+  prometheusSpec:
+    additionalScrapeConfigs:
+      - job_name: 'intersystems_iris_metrics'
+        metrics_path: '/api/monitor/metrics'
+        static_configs:
+          - targets:
+              - 'commerce-app-compute-0.iris-svc.commerce.svc.cluster.local:80' # Replace with your IRIS service
