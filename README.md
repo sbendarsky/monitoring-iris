@@ -1,6 +1,8 @@
 # InterSystems IRIS Monitoring with Prometheus and Grafana
 
 This repository provides the necessary files to set up **monitoring for InterSystems IRIS** in Kubernetes using **Prometheus and Grafana**. It includes a **custom CSP page** for exposing additional IRIS metrics, a **Grafana dashboard**, and a **Prometheus configuration**.
+![Monitoring Architecture](iris-monitoring-diagram.png)
+
 
 ## Contents
 - **`dashboard.json`** – Pre-configured Grafana dashboard for IRIS metrics.
