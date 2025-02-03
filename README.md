@@ -1,21 +1,25 @@
-# IRIS Monitoring Configurations
-This repository contains monitoring configurations for InterSystems IRIS using Grafana and Prometheus.
+# InterSystems IRIS Monitoring with Prometheus and Grafana
 
-## Overview
-This repository includes tools and configurations for monitoring IRIS systems, such as:
+This repository provides the necessary files to set up **monitoring for InterSystems IRIS** in Kubernetes using **Prometheus and Grafana**. It includes a **custom CSP page** for exposing additional IRIS metrics, a **Grafana dashboard**, and a **Prometheus configuration**.
 
-- A Grafana dashboard.
-- Prometheus stack values.
-- Links to my articles
+## Contents
+- **`dashboard.json`** – Pre-configured Grafana dashboard for IRIS metrics.
+- **`custom-metrics.xml`** – CSP-based custom metrics endpoint for additional insights.
+- **`values.yaml`** – Prometheus configuration for scraping IRIS metrics.
 
-### Files
-#### Grafana Dashbaord
-- `grafana-dashboard.json`
-- Description: A Grafana dashboard for visualizing key metrics like CPU usage, database space, latency and system state for IRIS.
-#### Prometheus Stack Values
-- `values.yaml`
-- Description: Helm values for deploying Prometheus to collect IRIS metrics.
+## Setup Instructions
+1. **Deploy Prometheus & Grafana**  
+   ```bash
+   helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+   helm repo update
+   helm install monitoring prometheus-community/kube-prometheus-stack -n monitoring --create-namespace -f values.yaml
+   ```
 
-### Article
-- Setting Up Prometheus for InterSystems IRIS Monitoring in Kubernetes: 
-- Visualizing InterSystems IRIS Metrics with Grafana: 
+2. **Import Custom Metrics into IRIS**  
+   - Import `custom-metrics.xml` via the **InterSystems Management Portal**.
+   - Create a **web application** and configure `/metrics` as the CSP page.
+
+3. **Update Prometheus Targets** (in `values.yaml`)  
+
+4. **Import the Grafana Dashboard**  
+   - Open **Grafana** and import `dashboard.json` via **Dashboards > Import**.
