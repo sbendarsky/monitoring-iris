@@ -175,7 +175,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "SAM Collector"
+            "uid": "grafana"
           },
           "editorMode": "code",
           "expr": "iris_cpu_usage",
@@ -469,7 +469,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "SAM Collector"
+            "uid": "grafana"
           },
           "editorMode": "code",
           "expr": "iris_glo_ref_per_sec{instance=\"commerce-app-compute-0.iris-svc.commerce.svc.cluster.local:80\"}",
@@ -481,7 +481,7 @@
         },
         {
           "datasource": {
-            "uid": "SAM Collector"
+            "uid": "grafana"
           },
           "editorMode": "code",
           "expr": "iris_glo_ref_rem_per_sec{instance=\"commerce-app-compute-0.iris-svc.commerce.svc.cluster.local:80\"}",
@@ -614,7 +614,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "SAM Collector"
+            "uid": "grafana"
           },
           "editorMode": "code",
           "expr": "iris_phys_reads_per_sec{instance=\"commerce-app-compute-0.iris-svc.commerce.svc.cluster.local:80\"}",
@@ -718,7 +718,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "SAM Collector"
+            "uid": "grafana"
           },
           "editorMode": "code",
           "expr": "iris_glo_update_per_sec{instance=\"commerce-app-compute-0.iris-svc.commerce.svc.cluster.local:80\"}",
@@ -855,7 +855,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "SAM Collector"
+            "uid": "grafana"
           },
           "editorMode": "code",
           "expr": "iris_db_latency{id=\"IRISSYS\", instance=\"commerce-app-compute-0.iris-svc.commerce.svc.cluster.local:80\"}",
@@ -935,7 +935,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "SAM Collector"
+            "uid": "grafana"
           },
           "editorMode": "code",
           "expr": "iris_disk_percent_full{id=\"IRISSYS\",instance=\"commerce-app-compute-0.iris-svc.commerce.svc.cluster.local:80\"}",
@@ -1016,7 +1016,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "SAM Collector"
+            "uid": "grafana"
           },
           "editorMode": "code",
           "expr": "iris_directory_space{id=\"IRISSYS\",instance=\"commerce-app-compute-0.iris-svc.commerce.svc.cluster.local:80\"}",
@@ -1097,7 +1097,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "SAM Collector"
+            "uid": "grafana"
           },
           "editorMode": "code",
           "expr": "iris_jrn_free_space{id=\"primary\",instance=\"commerce-app-compute-0.iris-svc.commerce.svc.cluster.local:80\"}",
@@ -1177,7 +1177,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "SAM Collector"
+            "uid": "grafana"
           },
           "editorMode": "code",
           "expr": "iris_jrn_free_space{id=\"WIJ\",instance=\"commerce-app-compute-0.iris-svc.commerce.svc.cluster.local:80\"}",
@@ -1257,7 +1257,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "SAM Collector"
+            "uid": "grafana"
           },
           "editorMode": "code",
           "expr": "iris_system_alerts{instance=\"commerce-app-compute-0.iris-svc.commerce.svc.cluster.local:80\"}",
@@ -1341,7 +1341,7 @@
       "targets": [
         {
           "datasource": {
-            "uid": "SAM Collector"
+            "uid": "grafana"
           },
           "editorMode": "code",
           "expr": "iris_jrn_size{id=\"primary\",instance=\"commerce-app-compute-0.iris-svc.commerce.svc.cluster.local:80\"}",
